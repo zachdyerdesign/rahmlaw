@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    {% if site.data.settings.slider %}
+    {% include fixed-width-carousel.html %}
+    {% endif %}
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      {% if site.data.settings.shoutout  %}
+      {% include shoutout.html %}
+      {% endif %}
+
+      {% include featurettes.html %}
+
+      {% include footer.html %}
+
+    </div><!-- /.container -->
+
+    {% include scripts.html %}
+
+  </body>
+</html>
