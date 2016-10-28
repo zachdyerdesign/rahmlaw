@@ -1,6 +1,6 @@
 <!-- START THE FEATURETTES -->
-
-{% for page in site.pages %}
+{% assign sorted_pages = site.pages | sort: "order" %}
+{% for page in sorted_pages %}
 {% if page.url != "/" and page.url != "/feed.xml" %}
 <hr class="featurette-divider">
 

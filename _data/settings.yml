@@ -1,6 +1,9 @@
-logo: console
 slider: true
-shoutout: true
+shoutout: false
 nav: # fixed sticks to the top of the page and static is contained in a wrapper
   position: fixed
   inverse: false
+logo:
+  img: true
+  url: /img/logo.png
+  icon: console
